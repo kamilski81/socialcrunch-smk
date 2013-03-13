@@ -1,4 +1,13 @@
 SocialcrunchSmk::Application.routes.draw do
+
+  root to: 'questions#index'
+
+  resources :questions, only: [:index] do
+    member do
+      post :respond
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

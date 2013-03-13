@@ -7,7 +7,7 @@ gem 'haml'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -30,9 +30,9 @@ group :development do
   # Download http://rubyforge.org/frs/download.php/75414/linecache19-0.5.13.gem
   # and run gem install ~/Downloads/linecach19-0.5.13.gem
   # Source: http://rubyforge.org/frs/?group_id=8883&release_id=46302
-  #gem 'ruby-debug-base19x',   '0.11.30.pre10'
-  #gem 'ruby-debug-ide',       '0.4.17.beta14'
-  #gem 'linecache19',          '0.5.13'
+  gem 'ruby-debug-base19x',   '0.11.30.pre10'
+  gem 'ruby-debug-ide',       '0.4.17.beta14'
+  gem 'linecache19',          '0.5.13'
   gem 'pry'
 end
 
