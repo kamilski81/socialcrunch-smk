@@ -11,23 +11,39 @@ class Questions extends $SC
 
   initQuestionsForm: () =>
 
-    $('#questions').delegate '#questions_submit', 'click', (e)->
+    $('#questions').delegate '#next_button', 'click', (e)->
       e.preventDefault()
       e.stopPropagation()
-      data = {}
-      $('#questions_form').find(':input').filter(':checked').each ->
-        input       = $(this)
-        input_name  = input.attr("name")
-        input_val   = input.val()
-        data[input_name] = input_val
-
-      $.post("/questions/respond", data, (response) ->
+      $.get("/questions/get_more_questions", (response) ->
         $('#questions').html(response)
       )
 
-      false
+    $('#questions').delegate '#vote_button', 'click', (e)->
+      e.preventDefault()
+      e.stopPropagation()
 
-    false
+      # Generate the data that will be sent to server
+      data = {}
+      $('#questions_form').find(':input').filter(':checked').each ->
+        input       = $(this)
+        qid         = input.attr("name")
+        smk         = input.val()
+        data[qid] = smk
+
+        answered_el = $(".#{qid}.#{smk}")
+        # Increment previous count by 1
+        new_count   = parseInt(answered_el.html().trim()) + 1
+        answered_el.html(new_count)
+
+      $.post("/questions/respond", data, (response) ->
+        if response == "success"
+          $('.question_results').fadeIn()
+          $('#vote_button').fadeOut();
+
+          setTimeout (=>
+            $('#next_button').fadeIn();
+          ), 1500
+      )
 
 # Assign this class to the $SC.Application Namespace
 $SC.Application = $.extend({}, $SC.Application, {Questions})

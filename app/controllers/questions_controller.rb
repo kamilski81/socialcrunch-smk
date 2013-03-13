@@ -27,6 +27,10 @@ class QuestionsController < ApplicationController
         Rails.logger.info "Responded to question_id: '#{question_id}', with response: '#{response}'"
       end
     end
+    render :text => "success"
+  end
+
+  def get_more_questions
     @questions = more_questions
     render partial: "questions/questions_container", layout: nil
   end

@@ -15,18 +15,14 @@
                 = question.name
               %div
                 = question.description
-              %div
-                = question.stat.shag_count
-              %div
-                = question.stat.marry_count
-              %div
-                = question.stat.kill_count
-              %div
-                = question.stat.total_count
 
             .response-container
               - Constants::SMK_OPTIONS.each do |gender_pref|
                 %input{type: "radio", name: question.id, value: gender_pref}
                   = gender_pref.titleize
+                  %span{class: "question_results #{question.id} #{gender_pref}"}
+                    = question.stat["#{gender_pref}_count".to_sym]
 
-      %input{type: "submit", name: "submit", value: "Vote", id: "questions_submit"}
+
+      %input{type: "submit", name: "vote", value: "Vote", id: "vote_button"}
+      %input{type: "submit", name: "next", value: "Next", id: "next_button"}
