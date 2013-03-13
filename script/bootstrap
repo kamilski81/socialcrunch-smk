@@ -1,0 +1,5 @@
+#!/bin/sh
+# Need to manually install some dependencies...
+wget -O /tmp/linecache19-0.5.13.gem http://rubyforge.org/frs/download.php/75414/linecache19-0.5.13.gem
+gem install /tmp/linecache19-0.5.13.gem
+bundle install
