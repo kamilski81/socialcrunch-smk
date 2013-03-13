@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/constants.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/question.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/response.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/stat.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="" />
     <ignored path="socialcrunch-smk.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,10 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="response.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/response.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1400862">
+            <state line="10" column="2" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongoid.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="36" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.85991377">
               <folding />
             </state>
           </provider>
@@ -81,6 +84,7 @@
         <option value="$PROJECT_DIR$/app/models/constants.rb" />
         <option value="$PROJECT_DIR$/app/models/question.rb" />
         <option value="$PROJECT_DIR$/app/models/response.rb" />
+        <option value="$PROJECT_DIR$/config/mongoid.yml" />
       </list>
     </option>
   </component>
@@ -505,7 +509,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/response.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1400862">
+        <state line="10" column="2" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="36" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.85991377">
           <folding />
         </state>
       </provider>
