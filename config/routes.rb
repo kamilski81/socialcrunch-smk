@@ -8,7 +8,7 @@ SocialcrunchSmk::Application.routes.draw do
 
   resources :questions, only: [:index, :show] do
     collection do
-      post :respond
+      match :respond
     end
   end
 

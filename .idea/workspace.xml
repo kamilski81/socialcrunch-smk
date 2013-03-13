@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/socialcrunch.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/questions/_question_container.haml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.coffee" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.haml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/questions/_question_container.haml" afterPath="$PROJECT_DIR$/app/views/questions/_questions_container.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/constants.rb" afterPath="$PROJECT_DIR$/app/models/constants.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/question.rb" afterPath="$PROJECT_DIR$/app/models/question.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/response.rb" afterPath="$PROJECT_DIR$/app/models/response.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/stat.rb" afterPath="$PROJECT_DIR$/app/models/stat.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/questions/index.haml" afterPath="$PROJECT_DIR$/app/views/questions/index.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/question_spec.rb" afterPath="$PROJECT_DIR$/spec/models/question_spec.rb" />
     </list>
     <ignored path="socialcrunch-smk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,89 +26,64 @@
     <disable_hints />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.6589285">
       <split-first>
-        <leaf>
-          <file leaf-file-name="questions_controller.rb" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.15608919">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/questions/index.haml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="33" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.9545455">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_question_container.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/questions/_question_container.haml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="34" selection-start="485" selection-end="485" vertical-scroll-proportion="-11.227273">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="questions.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="8" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.51814884">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="questions_controller.rb" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="13" column="52" selection-start="306" selection-end="306" vertical-scroll-proportion="0.28547296">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/views/questions/index.haml">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="5" column="39" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="question.rb" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/app/models/question.rb">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="33" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.33693972">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <leaf>
           <file leaf-file-name="questions.coffee" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="30" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <marker date="1363214469000" expanded="true" signature="30:357" placeholder="{...}" />
+                    <marker date="1363214469000" expanded="true" signature="245:357" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <file leaf-file-name="_questions_container.haml" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="22" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="response.rb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/models/response.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="48" selection-start="543" selection-end="543" vertical-scroll-proportion="0.3348485">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="question.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/question.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="55" column="35" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="stat.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/stat.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+                <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -137,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/constants.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -145,14 +111,15 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/socialcrunch.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee" />
         <option value="$PROJECT_DIR$/app/models/stat.rb" />
-        <option value="$PROJECT_DIR$/app/views/questions/index.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/questions/_question_container.haml" />
         <option value="$PROJECT_DIR$/app/models/response.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/questions/index.haml" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee" />
+        <option value="$PROJECT_DIR$/app/views/questions/_questions_container.haml" />
         <option value="$PROJECT_DIR$/app/models/question.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
       </list>
     </option>
   </component>
@@ -684,7 +651,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32638165" sideWeight="0.9242262" order="1" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16458334" sideWeight="0.7309698" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1327381" sideWeight="0.71637124" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1327381" sideWeight="0.71637124" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2836288" sideWeight="0.9993965" order="3" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13333334" sideWeight="0.5187817" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.358804" sideWeight="0.22785486" order="8" side_tool="true" content_ui="tabs" />
@@ -815,51 +782,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/index.haml">
+    <entry file="file://$PROJECT_DIR$/app/models/response.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.9545455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/_question_container.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="485" selection-end="485" vertical-scroll-proportion="-11.227273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.15608919">
+        <state line="19" column="3" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0">
+        <state line="18" column="52" selection-start="435" selection-end="435" vertical-scroll-proportion="0.35454544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/questions/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+        <state line="5" column="39" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/question.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="35" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.0">
+        <state line="33" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.33693972">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/response.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="543" selection-end="543" vertical-scroll-proportion="0.3348485">
+        <state line="30" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1363214469000" expanded="true" signature="30:357" placeholder="{...}" />
+            <marker date="1363214469000" expanded="true" signature="245:357" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="52" selection-start="306" selection-end="306" vertical-scroll-proportion="0.28547296">
           <folding />
         </state>
       </provider>

@@ -30,8 +30,8 @@ class Question
 
   def self.get_questions(session_id, gender_pref)
     # get existing responses of user
-    exclude_qids = get_users_responses(session_id)
-    questions = get_next_questions(exclude_qids, gender_pref)
+    exclude_qids  = get_users_responses(session_id)
+    questions     = get_next_questions(exclude_qids, gender_pref)
     questions
   end
 
@@ -44,7 +44,8 @@ class Question
   end
 
   def self.get_next_questions(exclude_qids, gender_pref)
-    criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(1) #@kamtodo: 3)
+    #criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(1) #@kamtodo: 3)
+    criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(3)
 
     if gender_pref == Constants::MALE || gender_pref == Constants::FEMALE
       criteria = criteria.where(gender: gender_pref)

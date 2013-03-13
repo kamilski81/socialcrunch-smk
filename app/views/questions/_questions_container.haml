@@ -1,0 +1,32 @@
+- if @questions.empty?
+  Thanks for playing!!!
+- else
+  %ul
+    %form{id: "questions_form"}
+      - @questions.each do |question|
+        %li
+          %div
+            .question-container
+              %div
+                = question.id
+              %img
+                = question.image
+              %div
+                = question.name
+              %div
+                = question.description
+              %div
+                = question.stat.shag_count
+              %div
+                = question.stat.marry_count
+              %div
+                = question.stat.kill_count
+              %div
+                = question.stat.total_count
+
+            .response-container
+              - Constants::SMK_OPTIONS.each do |gender_pref|
+                %input{type: "radio", name: question.id, value: gender_pref}
+                  = gender_pref.titleize
+
+      %input{type: "submit", name: "submit", value: "Vote", id: "questions_submit"}

@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
   def index
     #create_questions
-    @questions = Question.get_questions(session_id, gender_pref).to_a
+    @questions = more_questions
   end
 
   def show
@@ -27,10 +27,15 @@ class QuestionsController < ApplicationController
         Rails.logger.info "Responded to question_id: '#{question_id}', with response: '#{response}'"
       end
     end
-    render :text => "done"
+    @questions = more_questions
+    render partial: "questions/questions_container", layout: nil
   end
 
   private
+
+  def more_questions
+    Question.get_questions(session_id, gender_pref)
+  end
 
   def create_questions
     Question.create!( name: "Pamela Anderson", description: "Former Playboy model",

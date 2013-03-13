@@ -10,25 +10,24 @@ class Questions extends $SC
     this
 
   initQuestionsForm: () =>
-    questionsForm = $('#questions_form')
 
-    questionsForm.submit ->
-      form = this
-      # Create data
+    $('#questions').delegate '#questions_submit', 'click', (e)->
+      e.preventDefault()
+      e.stopPropagation()
       data = {}
-      $(form).find(':input').filter(':checked').each ->
+      $('#questions_form').find(':input').filter(':checked').each ->
         input       = $(this)
         input_name  = input.attr("name")
         input_val   = input.val()
         data[input_name] = input_val
 
-      $.post("/questions/respond", data) ->
-
+      $.post("/questions/respond", data, (response) ->
+        $('#questions').html(response)
+      )
 
       false
 
     false
-
 
 # Assign this class to the $SC.Application Namespace
 $SC.Application = $.extend({}, $SC.Application, {Questions})
