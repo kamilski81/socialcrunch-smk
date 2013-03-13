@@ -2,8 +2,12 @@ SocialcrunchSmk::Application.routes.draw do
 
   root to: 'questions#index'
 
-  resources :questions, only: [:index] do
-    member do
+
+  # @kamtodo: make this post on front-end
+  post '/prefs' => 'questions#update_gender_pref'
+
+  resources :questions, only: [:index, :show] do
+    collection do
       post :respond
     end
   end

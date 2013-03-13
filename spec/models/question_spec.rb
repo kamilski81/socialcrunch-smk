@@ -39,7 +39,7 @@ describe Question do
     FactoryGirl.create(:response, question: first_question, session_id: session_id)
     FactoryGirl.create(:response, question: last_question, session_id: session_id)
 
-    qids = Question.get_all_question_ids_of_user(session_id)
+    qids = Question.get_users_responses(session_id)
 
     qids.size.should == 2
     qids[0].should == first_question
