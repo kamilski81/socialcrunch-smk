@@ -37,6 +37,7 @@ group :development do
   gem 'ruby-debug-ide',       '0.4.17.beta14'
   gem 'linecache19',          '0.5.13'
   gem 'pry'
+  gem 'thin'
 end
 
 group :test do

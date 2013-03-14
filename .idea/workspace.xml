@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="statis assets">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/unicorn.rb" />
+    <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
     </list>
     <ignored path="socialcrunch-smk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +45,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="85" selection-start="953" selection-end="953" vertical-scroll-proportion="0.45387453">
+            <state line="39" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.52583027">
               <folding />
             </state>
           </provider>
@@ -471,7 +467,11 @@
       <created>1363304203342</created>
       <updated>1363304203342</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added unicorn!!!">
+      <created>1363304648142</created>
+      <updated>1363304648142</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -533,7 +533,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="statis assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unicorn!!!" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -553,6 +553,7 @@
     <MESSAGE value="links" />
     <MESSAGE value="removed todos" />
     <MESSAGE value="statis assets" />
+    <MESSAGE value="Added unicorn!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -667,7 +668,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="85" selection-start="953" selection-end="953" vertical-scroll-proportion="0.45387453">
+        <state line="39" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.52583027">
           <folding />
         </state>
       </provider>
