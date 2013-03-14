@@ -9,9 +9,9 @@
 
     = csrf_meta_tags
 
-
   %body
     #main
-      = yield
+      #wrapper
+        = yield
 
     = render partial: "layouts/footer"

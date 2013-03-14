@@ -1,28 +1,26 @@
 - if @questions.empty?
   Thanks for playing!!!
 - else
-  %ul
-    %form{id: "questions_form"}
-      - @questions.each do |question|
-        %li
-          %div
-            .question-container
-              %div
-                = question.id
-              %img
-                = question.image
-              %div
-                = question.name
-              %div
-                = question.description
+  %form{id: "questions_form"}
+    - @questions.each do |question|
+      .block
+        .questionimage
+          -#= question.image #@kamtodo
+          %img{src: "/assets/male_small.png"}
+          %span
+            = "#{question.name} / #{question.description}"
+        .shagmarrykill
+          - Constants::SMK_OPTIONS.each do |gender_pref|
+            %input{type: "radio", name: question.id, value: gender_pref}
+              = gender_pref.titleize
+              %span{class: "question_results #{question.id} #{gender_pref}"}
+                = question.stat["#{gender_pref}_count".to_sym]
 
-            .response-container
-              - Constants::SMK_OPTIONS.each do |gender_pref|
-                %input{type: "radio", name: question.id, value: gender_pref}
-                  = gender_pref.titleize
-                  %span{class: "question_results #{question.id} #{gender_pref}"}
-                    = question.stat["#{gender_pref}_count".to_sym]
+    .spacer
+    #nextround
+      %h3
+        %span
+          %input{type: "submit", name: "vote", value: "Vote", id: "vote_button"}
+          %input{type: "submit", name: "next", value: "Next", id: "next_button"}
 
 
-      %input{type: "submit", name: "vote", value: "Vote", id: "vote_button"}
-      %input{type: "submit", name: "next", value: "Next", id: "next_button"}

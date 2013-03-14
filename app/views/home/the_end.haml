@@ -1,0 +1,45 @@
+#header
+  %h1.title The End
+
+#content
+  .block
+    %h2.genderheader View Shag Marry Kill
+
+    .leaders
+      %div
+        %img{src: "/assets/male_small.png"}
+
+    #nextround.blockspacer
+      %h3
+        %span Play Next Round!
+  .block.blockspacer
+    %h2.genderheader Share Shag Marry Kill
+    -#@kamtodo: add fonts to site
+    %ul.share
+      %li
+        %img{src: "/assets/facebook.png"}
+      %li
+        %img{src: "/assets/twitter.png"}
+      %li
+        %img{src: "/assets/googleplus.png"}
+  .block
+    %h2.genderheader Play SocialCrunch
+    .play
+      %img{src: "/assets/logo.jpg"}
+
+
+#footer.negspacer
+  %h1 I need more...
+  %form
+    %textarea#message{cols: "30",row: "10"}
+      Hey shagger-marrier-killers,
+
+      Got suggestions for us? Drop us a note. We'll let you know when there are more celebs to hit up on Shag
+      Marry Kill!
+
+      Besos,
+      SMK
+    %br
+    %input#email.email{type: "text", value: "enter your email address"}
+    %input.submit{type: "submit", value: "submit"}
+

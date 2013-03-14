@@ -44,8 +44,8 @@ class Question
   end
 
   def self.get_next_questions(exclude_qids, gender_pref)
-    criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(1) #@kamtodo: 3)
-    #criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(3)
+    #criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(1) #@kamtodo: 3)
+    criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(3)
 
     if gender_pref == Constants::MALE || gender_pref == Constants::FEMALE
       criteria = criteria.where(gender: gender_pref)

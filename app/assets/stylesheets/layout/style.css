@@ -1,0 +1,326 @@
+/****Global Fonts****/
+@font-face {
+    font-family: "PillGothic600mg-Bold";
+    src: url('../fonts/Pill/PillGothic600mg-Bold.ttf');
+}
+@font-face {
+    font-family: "PillGothic600mg-Light";
+    src: url('../fonts/Pill/PillGothic600mg-Light.ttf');
+}
+@font-face {
+    font-family: "PillGothic600mg-BoldObq";
+    src: url('../fonts/Pill/PillGothic600mg-BoldObq.ttf');
+}
+@font-face {
+    font-family: "PillGothic600mg-LightObq";
+    src: url('../fonts/Pill/PillGothic600mg-LightObq.ttf');
+}
+@font-face {
+    font-family: "PillGothic600mg-Regular";
+    src: url('../fonts/Pill/PillGothic600mg-Regular.ttf');
+}
+
+body{
+    font-family: PillGothic600mg-Regular, Helvetica, san serif;
+}
+
+h1, h2, h3{
+    font-family: PillGothic600mg-Bold, Helvetica, san serif;
+    color: #fff;
+    -webkit-text-shadow: 3px 3px 4px #000;
+    -moz-text-shadow: 3px 3px 4px #000;
+    text-shadow: 3px 3px 4px #000;
+}
+
+
+
+/********* Global Styles ***********/
+
+body {
+    background-image : url('/assets/background.jpg');
+    background-color: #000;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#header {
+    margin: 15 auto;
+}
+#header h1.title {
+    font-size: 3em;
+}
+
+#content {
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block .questionimage img {
+    width: 225px;
+    height: 225px;
+    position: relative;
+    top: -25px;
+    left: -25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.spacer {
+    height: 35px;
+    width: 10px;
+    margin: auto;
+}
+
+.negspacer {
+    margin-top: -50px;
+}
+
+#poweredby {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+#footer {
+    text-align: center;
+    vertical-align: bottom;
+    height: 100px;
+    color: #fff;
+    font-size: 0.8em;
+    margin-top: 100px;
+}
+
+#footer input, #footer textarea {
+    border: 2px solid black;
+    font-family: PillGothic600mg-Bold;
+
+}
+
+#footer textarea {
+    width: 225px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+
+#footer input.email{
+    height: 2em;
+    width: 175px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: PillGothic600mg-Bold;
+}
+
+#footer input.submit{
+    padding: 6px;
+    color: #fff;
+    margin-left: 7px;
+    border-radius: 10px;
+    font-family: PillGothic600mg-Bold;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+#footer input.submit:hover{
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+
+/************Landing************/
+
+.gender, .questionimage {
+    border-radius: 25px;
+    border: 3px solid black;
+    overflow: hidden;
+    margin: 25px;;
+    height: 175px;
+    width: 175px;
+    padding: 12px 25px;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}
+
+.gender {
+    background-color: #ddd;
+}
+
+.gender:hover {
+    background-color: #dd5555;
+    cursor: pointer;
+}
+
+.gender img {
+    display: block;
+    margin: auto auto;
+    vertical-align: middle;
+}
+
+h1 {
+    text-align: center;
+}
+.genderheader {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+/********SMK Game*******************/
+.questionimage {
+    background-color: #000;
+    position: relative;
+}
+
+.questionimage span {
+    font-family: "PillGothic600mg-Light";
+    position: absolute;
+    color: #fff;
+    bottom: 5px;
+    left: 0px;
+    width: 225px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.shagmarrykill {
+    background-color: #111;
+    border-radius: 5px;
+    height: 1em;
+    color: #fff;
+    width: 225px;
+    margin: -13px auto 0 auto;
+    padding: 0.4em;
+    font-size: 1.2em;
+}
+.shagmarrykill input {
+    margin: 0 11px;
+
+}
+
+/************Leader Board **********/
+
+.statlist{
+    display: inline-block;
+    width: 225px;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.statlist ul li img {
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin: 5px;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}
+
+.statlist ul li {
+    position: relative;
+    left: -65px;
+}
+
+.statlist ul li span {
+    color: #fff;
+    width: 75px;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+/*************The End*************/
+.share {
+    margin-top: 50px;
+    margin-right: 38px;
+    width: 225px;
+}
+
+.blockspacer {
+    margin-bottom: 50px;
+}
+
+.share img {
+    opacity: 0.8;
+}
+
+.share img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.play {
+    background-color: #000;
+    border-radius: 25px;
+    border: 3px solid black;
+    overflow: hidden;
+    padding-bottom: 50px;
+    margin: 45px;
+    height: 145px;
+    width: 175px;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}
+
+.play:hover{
+    cursor: pointer;
+    border: 3px solid gray;
+}
+
+#nextround h3{
+    text-align: center;
+    color: #fff;
+}
+
+#nextround h3 span:hover {
+    cursor: pointer;
+    border: 3px solid gray;
+
+}
+
+#nextround h3 span {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}
+
+.leaders {
+    display: inline-block;
+    width: 225px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 40px 0px 10px 0px;
+    height: 110px;
+}
+
+.leaders img {
+    border-radius: 5px;
+    border: 3px solid black;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    -moz-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 5px;
+}
