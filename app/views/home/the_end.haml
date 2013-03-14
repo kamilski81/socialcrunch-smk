@@ -11,21 +11,27 @@
 
     #nextround.blockspacer
       %h3
-        %span Play Next Round!
+        %a{href: "/signout"}
+          %span Play Next Round!
+
   .block.blockspacer
     %h2.genderheader Share Shag Marry Kill
     -#@kamtodo: add fonts to site
     %ul.share
       %li
-        %img{src: "/assets/facebook.png"}
+        %a{href: "http://facebook.com/socialcrunch", target: "_blank"}
+          %img{src: "/assets/facebook.png"}
       %li
-        %img{src: "/assets/twitter.png"}
+        %a{href: "http://twitter.com/socialcrunch", target: "_blank"}
+          %img{src: "/assets/twitter.png"}
       %li
-        %img{src: "/assets/googleplus.png"}
+        %a{href: "https://plus.google.com/117772758368423278117", target: "_blank"}
+          %img{src: "/assets/googleplus.png"}
   .block
     %h2.genderheader Play SocialCrunch
     .play
-      %img{src: "/assets/logo.jpg"}
+      %a{href: "http://socialcrunch.com", target: "_blank"}
+        %img{src: "/assets/logo.jpg"}
 
 
 #footer.negspacer
