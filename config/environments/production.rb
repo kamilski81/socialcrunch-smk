@@ -5,7 +5,7 @@ SocialcrunchSmk::Application.configure do
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local = false
   config.action_controller.perform_caching = true
 
   config.serve_static_assets = true
@@ -34,10 +34,13 @@ SocialcrunchSmk::Application.configure do
   # config.log_level = :debug
 
   # Prepend all log lines with the following tags
-  # config.log_tags = [ :subdomain, :uuid ]
+  config.log_tags = [ :uuid ]
 
   # Use a different logger for distributed setups
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
+  # Created for unicorn purposes
+  config.logger = Logger.new(STDOUT)
+  config.logger.level = Logger.const_get(ENV['LOG_LEVEL'] ? ENV['LOG_LEVEL'].upcase : 'INFO')
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
@@ -48,8 +51,6 @@ SocialcrunchSmk::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
 
-  # Disable delivery errors, bad email addresses will be ignored
-  # config.action_mailer.raise_delivery_errors = false
 
   # Enable threaded mode
   # config.threadsafe!
@@ -61,7 +62,16 @@ SocialcrunchSmk::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  # Log the query plan for queries taking more than this (works
-  # with SQLite, MySQL, and PostgreSQL)
-  # config.active_record.auto_explain_threshold_in_seconds = 0.5
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = {:host => 'socialcrunch.com'}
+
+  ActionMailer::Base.smtp_settings = {
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => ENV['SENDGRID_USERNAME'],
+      :password       => ENV['SENDGRID_PASSWORD'],
+      :domain         => 'heroku.com'
+  }
+  ActionMailer::Base.delivery_method = :smtp
 end

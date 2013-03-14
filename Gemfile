@@ -51,3 +51,8 @@ group :test do
   gem 'rspec-rails'         # Rspec Testing for rails
   gem 'mongoid-rspec'
 end
+
+
+group :production do
+  gem 'unicorn', '~> 4.3.1'
+end
