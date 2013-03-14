@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="socialcrunch-smk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_questions_container.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_questions_container.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.18338558">
+            <state line="16" column="24" selection-start="605" selection-end="605" vertical-scroll-proportion="-9.454545">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.05909091">
               <folding />
             </state>
           </provider>
@@ -95,7 +103,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/screen.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/layout/style.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/global/fonts.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/global/mixins.css.scss" />
         <option value="$PROJECT_DIR$/app/models/constants.rb" />
@@ -107,6 +114,7 @@
         <option value="$PROJECT_DIR$/app/views/home/index.haml" />
         <option value="$PROJECT_DIR$/app/views/home/the_end.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -627,13 +635,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/global/mixins.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
@@ -736,7 +737,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.18338558">
+        <state line="16" column="24" selection-start="605" selection-end="605" vertical-scroll-proportion="-9.454545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.05909091">
           <folding />
         </state>
       </provider>
