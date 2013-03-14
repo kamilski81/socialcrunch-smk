@@ -14,9 +14,3 @@
 .rvmrc
 /log/*.log
 /tmp
-
-# IntelliJ RubyMine
-.idea
-*.iml
-/.rvmrc
-.DS_Store

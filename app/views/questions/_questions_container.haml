@@ -1,5 +1,7 @@
-- if @questions.empty?
-  Thanks for playing!!!
+- if @questions.size < Constants::QUESTIONS_LIMIT
+  - Rails.logger.info "The game has ended, play again."
+  :javascript
+    window.location.href = '/the_end';
 - else
   %form{id: "questions_form"}
     - @questions.each do |question|

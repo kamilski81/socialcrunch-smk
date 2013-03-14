@@ -9,14 +9,6 @@ class QuestionsController < ApplicationController
     render "index"
   end
 
-  def update_gender_pref
-    unless gender_pref
-      session[:gender_pref] = params[:gender_pref].downcase if params[:gender_pref]
-    end
-
-    render :text => "Gender pref: '#{session[:gender_pref]}'"
-  end
-
   def respond
     Rails.logger.info "Questions#respond. session_id: '#{session_id}', gender_pref: '#{gender_pref}'"
     params.each_entry do |key, val|
@@ -49,12 +41,12 @@ class QuestionsController < ApplicationController
     Question.create!( name: "Anna Kournikova", description: "tennis player",
                       image: "url3.com", gender: Constants::FEMALE, sequence_num: 1)
 
-    Question.create!( name: "Bobanna", description: "Former Playboy model",
-                      image: "url.com", gender: Constants::FEMALE, sequence_num: 1)
-    Question.create!( name: "Nina", description: "actress",
-                      image: "url2.com", gender: Constants::FEMALE, sequence_num: 1)
-    Question.create!( name: "Slaya", description: "tennis player",
-                      image: "url3.com", gender: Constants::FEMALE, sequence_num: 1)
+    #Question.create!( name: "Bobanna", description: "Former Playboy model",
+    #                  image: "url.com", gender: Constants::FEMALE, sequence_num: 1)
+    #Question.create!( name: "Nina", description: "actress",
+    #                  image: "url2.com", gender: Constants::FEMALE, sequence_num: 1)
+    #Question.create!( name: "Slaya", description: "tennis player",
+    #                  image: "url3.com", gender: Constants::FEMALE, sequence_num: 1)
 
   end
 end
