@@ -1,0 +1,13 @@
+/* Mix-ins and Supportive Variables */
+
+$base_path  : "";
+$path       : $base_path + "/assets";
+
+// @kamtodo: mixins are not working here...fix me
+@mixin font-face($font-path, $font-family: 'Helvetica Neue', $font-weight: 400) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-path);
+    font-weight:$font-weight;
+  }
+}

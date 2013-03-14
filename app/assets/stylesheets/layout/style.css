@@ -1,25 +1,3 @@
-/****Global Fonts****/
-@font-face {
-    font-family: "PillGothic600mg-Bold";
-    src: url('../fonts/Pill/PillGothic600mg-Bold.ttf');
-}
-@font-face {
-    font-family: "PillGothic600mg-Light";
-    src: url('../fonts/Pill/PillGothic600mg-Light.ttf');
-}
-@font-face {
-    font-family: "PillGothic600mg-BoldObq";
-    src: url('../fonts/Pill/PillGothic600mg-BoldObq.ttf');
-}
-@font-face {
-    font-family: "PillGothic600mg-LightObq";
-    src: url('../fonts/Pill/PillGothic600mg-LightObq.ttf');
-}
-@font-face {
-    font-family: "PillGothic600mg-Regular";
-    src: url('../fonts/Pill/PillGothic600mg-Regular.ttf');
-}
-
 body{
     font-family: PillGothic600mg-Regular, Helvetica, san serif;
 }
