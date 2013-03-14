@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/the_end.haml" afterPath="$PROJECT_DIR$/app/views/home/the_end.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="socialcrunch-smk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +25,18 @@
       <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="39" selection-start="641" selection-end="641" vertical-scroll-proportion="-15.363636">
+            <state line="10" column="4" selection-start="258" selection-end="258" vertical-scroll-proportion="-5.909091">
+              <folding>
+                <marker date="1363302733000" expanded="true" signature="254:385" placeholder="-#@kamtodo: add links here" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_questions_container.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.18338558">
               <folding />
             </state>
           </provider>
@@ -40,10 +51,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="the_end.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="the_end.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/the_end.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="46" selection-start="916" selection-end="916" vertical-scroll-proportion="0.762144">
+            <state line="37" column="26" selection-start="929" selection-end="929" vertical-scroll-proportion="-21.863636">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="9" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questions.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,15 +98,15 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/global/fonts.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/global/mixins.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
         <option value="$PROJECT_DIR$/app/models/constants.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/question.rb" />
         <option value="$PROJECT_DIR$/app/views/questions/_questions_container.haml" />
         <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/sections/home.coffee" />
+        <option value="$PROJECT_DIR$/app/views/home/index.haml" />
         <option value="$PROJECT_DIR$/app/views/home/the_end.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -504,7 +533,15 @@
       <created>1363301906060</created>
       <updated>1363301906060</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="links">
+      <created>1363302699903</created>
+      <updated>1363302699903</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed todos">
+      <created>1363302746577</created>
+      <updated>1363302746577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,11 +551,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3076121" sideWeight="0.8596585" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739863" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32638165" sideWeight="0.99620134" order="1" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32638165" sideWeight="0.99620134" order="1" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23988095" sideWeight="0.37122002" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16964285" sideWeight="0.6736184" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2836288" sideWeight="0.9984917" order="3" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16964285" sideWeight="0.71637124" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2836288" sideWeight="0.9984917" order="3" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13333334" sideWeight="0.5187817" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.358804" sideWeight="0.22785486" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33785194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -566,7 +603,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added home" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed todos" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -583,6 +620,8 @@
     <MESSAGE value="added fonts" />
     <MESSAGE value="Integrated to display 'end' page when done." />
     <MESSAGE value="Added home" />
+    <MESSAGE value="links" />
+    <MESSAGE value="removed todos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -644,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="0" selection-end="1398" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/home.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="27" selection-start="184" selection-end="184" vertical-scroll-proportion="0.1273123">
@@ -658,30 +690,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.014285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="3" selection-start="323" selection-end="323" vertical-scroll-proportion="0.26502147">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="79" selection-end="79" vertical-scroll-proportion="0.027896997">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="39" selection-start="641" selection-end="641" vertical-scroll-proportion="-15.363636">
           <folding />
         </state>
       </provider>
@@ -695,7 +706,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/the_end.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="46" selection-start="916" selection-end="916" vertical-scroll-proportion="0.762144">
+        <state line="37" column="26" selection-start="929" selection-end="929" vertical-scroll-proportion="-21.863636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="9" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="258" selection-end="258" vertical-scroll-proportion="-5.909091">
+          <folding>
+            <marker date="1363302733000" expanded="true" signature="254:385" placeholder="-#@kamtodo: add links here" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="298" selection-end="298" vertical-scroll-proportion="0.18338558">
           <folding />
         </state>
       </provider>
