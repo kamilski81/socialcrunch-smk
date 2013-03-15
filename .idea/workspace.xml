@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="">
+    <list default="true" id="2888d58e-c327-4f5c-b5a7-6e6c2265986b" name="Default" comment="config.ru">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="socialcrunch-smk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,93 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.haml">
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="258" selection-end="258" vertical-scroll-proportion="-5.909091">
-              <folding>
-                <marker date="1363302733000" expanded="true" signature="254:385" placeholder="-#@kamtodo: add links here" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_questions_container.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="605" selection-end="605" vertical-scroll-proportion="-9.454545">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.52583027">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="106" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-15.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unicorn.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="46" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="68" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leader_board.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/leader_board.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="the_end.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home/the_end.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="26" selection-start="929" selection-end="929" vertical-scroll-proportion="-21.863636">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="9" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questions.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/questions.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
+            <state line="42" column="43" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.6629921">
               <folding />
             </state>
           </provider>
@@ -127,9 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/global/fonts.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/global/mixins.css.scss" />
         <option value="$PROJECT_DIR$/app/models/constants.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/question.rb" />
@@ -143,6 +56,9 @@
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config.ru" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -154,9 +70,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="1028" />
+    <option name="width" value="840" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -471,21 +388,29 @@
       <created>1363304648142</created>
       <updated>1363304648142</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="config.ru">
+      <created>1363305427085</created>
+      <updated>1363305427085</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add sprockets">
+      <created>1363306565348</created>
+      <updated>1363306565348</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
+    <frame x="840" y="22" width="840" height="1024" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295099" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3076121" sideWeight="0.8596585" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3068063" sideWeight="0.8596585" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739863" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32638165" sideWeight="0.99620134" order="1" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277487" sideWeight="0.99620134" order="1" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23988095" sideWeight="0.37122002" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16964285" sideWeight="0.6736184" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2836288" sideWeight="0.9984917" order="3" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16964285" sideWeight="0.6722513" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2827225" sideWeight="0.9984917" order="3" side_tool="false" content_ui="tabs" x="803" y="522" width="128" height="37" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13333334" sideWeight="0.5187817" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.358804" sideWeight="0.22785486" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33785194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -502,7 +427,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
@@ -533,7 +458,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unicorn!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sprockets" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -554,46 +479,13 @@
     <MESSAGE value="removed todos" />
     <MESSAGE value="statis assets" />
     <MESSAGE value="Added unicorn!!!" />
+    <MESSAGE value="config.ru" />
+    <MESSAGE value="add sprockets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p286@socialcrunch-smk/gems/origin-1.0.11/lib/origin/optional.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="4836" selection-end="4836" vertical-scroll-proportion="0.3322884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/question.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="51" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sections/home.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="184" selection-end="184" vertical-scroll-proportion="0.1273123">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="3" selection-start="323" selection-end="323" vertical-scroll-proportion="0.26502147">
@@ -633,7 +525,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="4" selection-start="258" selection-end="258" vertical-scroll-proportion="-5.909091">
           <folding>
-            <marker date="1363302733000" expanded="true" signature="254:385" placeholder="-#@kamtodo: add links here" />
+            <marker date="1363302733000" expanded="true" signature="-1:-1" placeholder="-#@kamtodo: add links here" />
           </folding>
         </state>
       </provider>
@@ -641,13 +533,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/questions/_questions_container.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="24" selection-start="605" selection-end="605" vertical-scroll-proportion="-9.454545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="106" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-15.5">
           <folding />
         </state>
       </provider>
@@ -668,7 +553,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="12" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.52583027">
+        <state line="18" column="53" selection-start="346" selection-end="346" vertical-scroll-proportion="-3.3090909">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="59" selection-start="1198" selection-end="1198" vertical-scroll-proportion="-16.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p286@socialcrunch-smk/gems/rack-1.4.5/lib/rack/deflater.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="112" selection-end="112" vertical-scroll-proportion="0.13065326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="35" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="17" selection-end="17" vertical-scroll-proportion="-1.1818181">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="56" selection-start="278" selection-end="278" vertical-scroll-proportion="-0.67173254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="43" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.6629921">
           <folding />
         </state>
       </provider>
