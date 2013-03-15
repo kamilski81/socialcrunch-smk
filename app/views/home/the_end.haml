@@ -6,8 +6,10 @@
     %h2.genderheader View Shag Marry Kill
 
     .leaders
-      %div
-        %img{src: "/assets/male_small.png"}
+      - @questions.each do |question|
+        - if question.image
+          %div
+            %img{src: question.image}
 
     #nextround.blockspacer
       %h3

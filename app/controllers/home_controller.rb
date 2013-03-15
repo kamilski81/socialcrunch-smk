@@ -9,6 +9,7 @@ class HomeController < ApplicationController
   end
 
   def the_end
+    @questions = Question.all.limit(6)
   end
 
   def update_gender_pref
