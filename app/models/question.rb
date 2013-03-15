@@ -33,6 +33,10 @@ class Question
     end
   end
 
+  def self.ordered_by(order)
+    Question.all.order_by(("stat."+order).to_sym.desc)
+  end
+
   def self.get_questions(session_id, gender_pref)
     # get existing responses of user
     exclude_qids  = get_users_responses(session_id)

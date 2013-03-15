@@ -9,18 +9,32 @@
 #content
   #mostshagged.statlist
     %h2 Most Shagged
+    -# @nathantodo: these should be displaying inline-block
     %ul
-      %li
-        -# @nathantodo: these should be displaying inline-block
-        %img{src: "/assets/male_small.png"}
-        %span Caption / Description
+      - @most_shagged.each do |question|
+        %li
+          - if question.image
+            %img{src: "#{question.image}"}
+          %span
+            = "#{question.name} / #{question.description}"
+            = question.stat.shag_count
     %h2 Most Married
     %ul
       %li
-        %img{src: "/assets/male_small.png"}
-        %span Caption / Description
+        - @most_married.each do |question|
+          %li
+            - if question.image
+              %img{src: "#{question.image}"}
+            %span
+              = "#{question.name} / #{question.description}"
+              = question.stat.marry_count
     %h2 Most Killed
     %ul
       %li
-        %img{src: "/assets/male_small.png"}
-        %span Caption / Description
+        - @most_killed.each do |question|
+          %li
+            - if question.image
+              %img{src: "#{question.image}"}
+            %span
+              = "#{question.name} / #{question.description}"
+              = question.stat.kill_count

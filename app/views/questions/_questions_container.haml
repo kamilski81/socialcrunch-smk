@@ -7,8 +7,8 @@
     - @questions.each do |question|
       .block
         .questionimage
-          -#= question.image #@kamtodo
-          %img{src: "/assets/male_small.png"}
+          - if question.image
+            %img{src: "#{question.image}"}
           %span
             = "#{question.name} / #{question.description}"
         .shagmarrykill

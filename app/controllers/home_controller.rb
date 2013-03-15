@@ -3,6 +3,9 @@ class HomeController < ApplicationController
   end
 
   def leader_board
+    @most_shagged = Question.ordered_by("shag_count")
+    @most_married = Question.ordered_by("marry_count")
+    @most_killed  = Question.ordered_by("kill_count")
   end
 
   def the_end
