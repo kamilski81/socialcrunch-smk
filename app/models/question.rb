@@ -20,7 +20,12 @@ class Question
   index :"stat.kill_count" => -1
 
   embeds_one :stat
+  accepts_nested_attributes_for :stat
   after_initialize :build_stat_if_nil
+
+  def gender_enum
+    Constants::GENDER_PREFS
+  end
 
   def build_stat_if_nil
     if stat.nil?

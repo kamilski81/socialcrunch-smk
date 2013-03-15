@@ -7,7 +7,7 @@ class Constants
   MALE    = "male"
   FEMALE  = "female"
   BOTH    = "both"
-  GENDER_PREFS = [MALE, FEMALE, BOTH]
+  GENDER_PREFS = [MALE, FEMALE]
 
   QUESTIONS_LIMIT = 3
 end

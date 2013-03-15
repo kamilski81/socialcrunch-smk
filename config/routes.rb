@@ -1,5 +1,9 @@
 SocialcrunchSmk::Application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  devise_for :users
+
   root to: 'home#index', as: :home
 
   get '/prefs'        => 'home#update_gender_pref', as: :gender_pref
