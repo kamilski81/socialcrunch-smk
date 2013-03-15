@@ -10,5 +10,5 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.excluded_models = ['Response']
+  config.excluded_models = ['Response', 'User']
 end
