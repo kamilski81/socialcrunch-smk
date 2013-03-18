@@ -22,8 +22,15 @@ class Questions extends $SC
       checkedBoxes = $("input:radio:checked").length
 
       if checkedBoxes < 3
-        alert "Please make sure you choose only one person to Bang, Marry, and Kill."
+        alert "Please make sure you choose one person to Bang, Marry, and Kill."
         return false
+#      else
+#        if $(".shagmarrykill input:radio[value='kill']").length != 1 ||
+#           $(".shagmarrykill input:radio[value='bang']").length != 1 ||
+#           $(".shagmarrykill input:radio[value='marry']").length != 1
+#
+#        return false
+
 
       Analytical.event('clicked vote')
       e.preventDefault()

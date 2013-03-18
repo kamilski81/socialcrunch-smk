@@ -26,8 +26,12 @@
     / Analytical body_prepend
     = raw analytical.body_prepend_javascript
     / Analytical body_prepend end
+
+
     #main
       #wrapper
+        = render partial: "layouts/header"
+
         = yield
 
     = render partial: "layouts/footer"
