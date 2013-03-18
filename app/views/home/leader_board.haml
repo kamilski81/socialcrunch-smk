@@ -9,7 +9,6 @@
   #mostshagged.statlist
     %h2
       = "Most #{Constants::BANG.titleize}ed"
-    -# @nathantodo: these should be displaying inline-block
     %ul
       - @most_shagged.each do |question|
         %li
@@ -18,6 +17,7 @@
           %span
             = "#{question.name} / #{question.description}"
             = question.stat.shag_count
+  #mostmarried.statlist  
     %h2 Most Married
     %ul
       %li
@@ -28,6 +28,7 @@
             %span
               = "#{question.name} / #{question.description}"
               = question.stat.marry_count
+  #mostkilled.statlist
     %h2
       = "Most #{Constants::KILL.titleize}ed"
     %ul
