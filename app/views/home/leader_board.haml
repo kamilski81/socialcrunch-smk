@@ -8,40 +8,75 @@
       %a{href: "http://socialcrunch.com"}
         %img{style: "margin-bottom: -11px", src:"/assets/logowhitetext.png", alt: "SocialCrunch"}
   %h1
+    = site_name
+    %br
     Leader Board
 
 #content
+  %h1 Female Leader Board
   #mostshagged.statlist
     %h2
       = "Most #{Constants::BANG.titleize}ed"
     %ul
-      - @most_shagged.each do |question|
+      - @most_shagged_female.each do |question|
         %li
           - if question.image
             %img{src: "#{question.image}"}
           %span
-            = "#{question.name} / #{question.description}: "
-            = question.stat.shag_count
+            = "#{question.name}<br/>#{question.stat.bang_count}".html_safe
   #mostmarried.statlist  
     %h2 Most Married
     %ul
       %li
-        - @most_married.each do |question|
+        - @most_married_female.each do |question|
           %li
             - if question.image
               %img{src: "#{question.image}"}
             %span
-              = "#{question.name} / #{question.description}: "
-              = question.stat.marry_count
+              = "#{question.name}<br/>#{question.stat.marry_count}".html_safe
   #mostkilled.statlist
     %h2
       = "Most #{Constants::KILL.titleize}ed"
     %ul
       %li
-        - @most_killed.each do |question|
+        - @most_killed_female.each do |question|
           %li
             - if question.image
               %img{src: "#{question.image}"}
             %span
-              = "#{question.name} / #{question.description}: "
-              = question.stat.kill_count
+              = "#{question.name}<br/>#{question.stat.kill_count}".html_safe
+              
+#content
+  %h1 Male Leader Board
+  #mostshagged.statlist
+    %h2
+      = "Most #{Constants::BANG.titleize}ed"
+    %ul
+      - @most_shagged_male.each do |question|
+        %li
+          - if question.image
+            %img{src: "#{question.image}"}
+          %span
+            = "#{question.name}<br/>#{question.stat.bang_count}".html_safe
+  #mostmarried.statlist
+    %h2 Most Married
+    %ul
+      %li
+        - @most_married_male.each do |question|
+          %li
+            - if question.image
+              %img{src: "#{question.image}"}
+            %span
+              = "#{question.name}<br/>#{question.stat.marry_count}".html_safe
+  #mostkilled.statlist
+    %h2
+      = "Most #{Constants::KILL.titleize}ed"
+    %ul
+      %li
+        - @most_killed_male.each do |question|
+          %li
+            - if question.image
+              %img{src: "#{question.image}"}
+            %span
+              = "#{question.name}<br/>#{question.stat.kill_count}".html_safe
+

@@ -10,38 +10,6 @@ class Questions extends $SC
     this
     
   initQuestionsForm: () =>
-
-    #code added by Nathan to select buttons when two are selected and change color of selected
-    checkedRadios = 0
-    $(".shagmarrykill input:radio[value=\"shag\"]").click ->
-      $("input:radio[value=\"shag\"]").attr "disabled", true
-      $(this).next("span").addClass "selected"
-      $(this).siblings("input:radio").attr "disabled", "disabled"
-      checkedRadios = $("input:radio:checked").length
-      if checkedRadios is 2
-        $("input:radio").not(":disabled").next("span").addClass "selected"
-        $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
-  
-    $(".shagmarrykill input:radio[value=\"marry\"]").click ->
-      numberOfCheckedRadio = $("input:radio:checked").length
-      $("input:radio[value=\"marry\"]").attr "disabled", true
-      $(this).next("span").addClass "selected"
-      $(this).siblings("input:radio").attr "disabled", "disabled"
-      checkedRadios = $("input:radio:checked").length
-      if checkedRadios is 2
-        $("input:radio").not(":disabled").next("span").addClass "selected"
-        $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
-  
-    $(".shagmarrykill input:radio[value=\"kill\"]").click ->
-      numberOfCheckedRadio = $("input:radio:checked").length
-      $("input:radio[value=\"kill\"]").attr "disabled", true
-      $(this).next("span").addClass "selected"
-      $(this).siblings("input:radio").attr "disabled", "disabled"
-      checkedRadios = $("input:radio:checked").length
-      if checkedRadios is 2
-        $("input:radio").not(":disabled").next("span").addClass "selected"
-        $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
-  
     $('#questions').delegate '#next_button', 'click', (e)->
       Analytical.event('clicked next questions')
       e.preventDefault()
@@ -51,6 +19,12 @@ class Questions extends $SC
       )
 
     $('#questions').delegate '#vote_button', 'click', (e)->
+      checkedBoxes = $("input:radio:checked").length
+
+      if checkedBoxes < 3
+        alert "Please make sure you choose only one person to Bang, Marry, and Kill."
+        return false
+
       Analytical.event('clicked vote')
       e.preventDefault()
       e.stopPropagation()
