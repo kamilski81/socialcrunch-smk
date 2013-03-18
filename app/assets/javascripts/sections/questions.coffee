@@ -9,39 +9,39 @@ class Questions extends $SC
 
     this
     
-    #code added by Nathan to select buttons when two are selected and change color of selected
-    checkedRadios = 0
-      $(".shagmarrykill input:radio[value=\"Shag\"]").click ->
-        $("input:radio[value=\"Shag\"]").attr "disabled", true
-        $(this).next("span").addClass "selected"
-        $(this).siblings("input:radio").attr "disabled", "disabled"
-        checkedRadios = $("input:radio:checked").length
-        if checkedRadios is 2
-          $("input:radio").not(":disabled").next("span").addClass "selected"
-          $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
-
-      $(".shagmarrykill input:radio[value=\"Marry\"]").click ->
-        numberOfCheckedRadio = $("input:radio:checked").length
-        $("input:radio[value=\"Marry\"]").attr "disabled", true
-        $(this).next("span").addClass "selected"
-        $(this).siblings("input:radio").attr "disabled", "disabled"
-        checkedRadios = $("input:radio:checked").length
-        if checkedRadios is 2
-          $("input:radio").not(":disabled").next("span").addClass "selected"
-          $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
-
-      $(".shagmarrykill input:radio[value=\"Kill\"]").click ->
-        numberOfCheckedRadio = $("input:radio:checked").length
-        $("input:radio[value=\"Kill\"]").attr "disabled", true
-        $(this).next("span").addClass "selected"
-        $(this).siblings("input:radio").attr "disabled", "disabled"
-        checkedRadios = $("input:radio:checked").length
-        if checkedRadios is 2
-          $("input:radio").not(":disabled").next("span").addClass "selected"
-          $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
-
   initQuestionsForm: () =>
 
+    #code added by Nathan to select buttons when two are selected and change color of selected
+    checkedRadios = 0
+    $(".shagmarrykill input:radio[value=\"shag\"]").click ->
+      $("input:radio[value=\"shag\"]").attr "disabled", true
+      $(this).next("span").addClass "selected"
+      $(this).siblings("input:radio").attr "disabled", "disabled"
+      checkedRadios = $("input:radio:checked").length
+      if checkedRadios is 2
+        $("input:radio").not(":disabled").next("span").addClass "selected"
+        $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
+  
+    $(".shagmarrykill input:radio[value=\"marry\"]").click ->
+      numberOfCheckedRadio = $("input:radio:checked").length
+      $("input:radio[value=\"marry\"]").attr "disabled", true
+      $(this).next("span").addClass "selected"
+      $(this).siblings("input:radio").attr "disabled", "disabled"
+      checkedRadios = $("input:radio:checked").length
+      if checkedRadios is 2
+        $("input:radio").not(":disabled").next("span").addClass "selected"
+        $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
+  
+    $(".shagmarrykill input:radio[value=\"kill\"]").click ->
+      numberOfCheckedRadio = $("input:radio:checked").length
+      $("input:radio[value=\"kill\"]").attr "disabled", true
+      $(this).next("span").addClass "selected"
+      $(this).siblings("input:radio").attr "disabled", "disabled"
+      checkedRadios = $("input:radio:checked").length
+      if checkedRadios is 2
+        $("input:radio").not(":disabled").next("span").addClass "selected"
+        $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
+  
     $('#questions').delegate '#next_button', 'click', (e)->
       e.preventDefault()
       e.stopPropagation()
