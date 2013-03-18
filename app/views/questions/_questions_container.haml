@@ -10,7 +10,7 @@
           - if question.image
             %img{src: "#{question.image}"}
           %span
-            = "#{question.name}"
+            = "#{question.name} / #{question.description}"
         .shagmarrykill
           %ul
             - Constants::SMK_OPTIONS.each do |gender_pref|
@@ -21,8 +21,7 @@
                     = question.stat["#{gender_pref}_count ".to_sym]
 
     .spacer
-      %h3
-        %span
-          %input{type: "submit", name: "vote", value: "Vote", id: "vote_button"}
-          %input{type: "submit", name: "next", value: "Next", id: "next_button"}
+    %span
+      %input{type: "submit", name: "vote", value: "Vote", id: "vote_button"}
+      %input{type: "submit", name: "next", value: "Next", id: "next_button"}
 
