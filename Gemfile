@@ -8,6 +8,7 @@ gem 'haml'
 gem 'rails_admin'
 gem 'devise'
 gem 'analytical', :git => 'git://github.com/kamilski81/analytical.git', :branch => 'v3.0.12-with-tracking'
+gem 'newrelic_rpm',           '~> 3.5.5'
 
 # Gems used only for assets and not required
 # in production environments by default.
