@@ -1,0 +1,53 @@
+%h1
+  = ["The End", "Finito", "Thanks for Playing"].sample
+
+#content
+  .block
+    .leaders
+      %a{href: "/leader_board", onclick: "Analytical.event('viewed leader board');"}
+        %h1.genderheader
+          = "View Leader Board"
+          - @questions.each do |question|
+            - if question.image
+              %div
+              
+  .block.blockspacer
+    #nextround 
+      %h1.genderheader
+        = "Play Next Round!"
+      %a{href: "/", onclick: "Analytical.event('played next round');"}
+
+  .block.blockspacer.more
+<<<<<<< HEAD
+    %form
+      %textarea#message{cols: "30",row: "10"}
+        Hey hey,
+
+        Got suggestions for who to bang, marry, or kill? Drop us a note. We'll let you know when there are more celebs to hit up on Bang, Mary, Kill!
+
+        Besos,
+        BMK
+      %br
+      %input#email.email{type: "text", value: "enter your email address"}
+      %input.submit{type: "submit", value: "submit"}
+
+  
+=======
+    %h3 I need more...
+
+    #mc_embed_signup
+      %form#mc-embedded-subscribe-form.validate{:action => "http://socialcrunch.us5.list-manage.com/subscribe/post?u=755f44e55d468b9568a7ec9de&amp;id=ef11720e90", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+        .mc-field-group
+          %textarea#message{cols: "30",row: "10", name: "LNAME"}
+            Wanna suggest celebs? Got feedback? Drop us a note, and we'll let you know when there are more celebs to hit up on Bang, Mary, Kill!
+>>>>>>> fede1b568aaa342e23b6ec9e2fc24ea0b1331894
+
+            Besos,
+            BMK
+        #mce-responses.clear
+          #mce-error-response.response{:style => "display:none"}
+          #mce-success-response.response{:style => "display:none"}
+        .clear
+          -#<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          %input#email.email{type: "email", name: "EMAIL", value: "enter your email address"}/
+          %input.submit{name: "subscribe", type: "submit", value: "submit", onclick: "Analytical.event('clicked subscribe');"}/
