@@ -18,7 +18,7 @@
                 %input{type: "radio", name: question.id, value: gender_pref}
                   = gender_pref.titleize
                   %span{class: "question_results #{question.id} #{gender_pref}"}
-                    = question.stat["#{gender_pref}_count ".to_sym]
+                    = question.stat["#{gender_pref}_count".to_sym]
 
     .spacer
       %h3

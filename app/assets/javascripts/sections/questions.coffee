@@ -19,22 +19,19 @@ class Questions extends $SC
       )
 
     $('#questions').delegate '#vote_button', 'click', (e)->
-      checkedBoxes = $("input:radio:checked").length
-
-      if checkedBoxes < 3
-        alert "Please make sure you choose one person to Bang, Marry, and Kill."
-        return false
-#      else
-#        if $(".shagmarrykill input:radio[value='kill']").length != 1 ||
-#           $(".shagmarrykill input:radio[value='bang']").length != 1 ||
-#           $(".shagmarrykill input:radio[value='marry']").length != 1
-#
-#        return false
-
-
-      Analytical.event('clicked vote')
       e.preventDefault()
       e.stopPropagation()
+
+      if $("input:radio:checked").length < 3
+        alert "Choose one person to Bang, Marry, and Kill."
+        return false
+      else if $(".shagmarrykill input:radio[value='kill']:checked").length != 1 ||
+           $(".shagmarrykill input:radio[value='bang']:checked").length != 1 ||
+           $(".shagmarrykill input:radio[value='marry']:checked").length != 1
+        alert "You can only choose one person to Bang, Marry, or Kill"
+        return false
+
+      Analytical.event('clicked vote')
 
       # Generate the data that will be sent to server
       data = {}
