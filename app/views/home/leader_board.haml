@@ -1,15 +1,14 @@
 -#Set title
 #header
   %h1
-    Shag, Marry, Kill
+    = site_name
     %br
     Leader Board
 
--#@kamtodo: externalize site_name
-
 #content
   #mostshagged.statlist
-    %h2 Most Shagged
+    %h2
+      = "Most #{Constants::BANG.titleize}ed"
     -# @nathantodo: these should be displaying inline-block
     %ul
       - @most_shagged.each do |question|
@@ -29,7 +28,8 @@
             %span
               = "#{question.name} / #{question.description}"
               = question.stat.marry_count
-    %h2 Most Killed
+    %h2
+      = "Most #{Constants::KILL.titleize}ed"
     %ul
       %li
         - @most_killed.each do |question|

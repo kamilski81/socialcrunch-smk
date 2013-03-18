@@ -1,8 +1,8 @@
 class Constants
-  SHAG  = "shag"
+  BANG  = "bang"
   MARRY = "marry"
   KILL  = "kill"
-  SMK_OPTIONS = [SHAG, MARRY, KILL]
+  SMK_OPTIONS = [BANG, MARRY, KILL]
 
   MALE    = "male"
   FEMALE  = "female"

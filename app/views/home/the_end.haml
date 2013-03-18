@@ -3,13 +3,15 @@
 
 #content
   .block
-    %h2.genderheader View Shag Marry Kill
+    %h2.genderheader
+      = "View Leaderboard"
 
     .leaders
       - @questions.each do |question|
         - if question.image
           %div
-            %img{src: question.image}
+            %a{href: "/leader_board"}
+              %img{src: question.image}
 
     #nextround.blockspacer
       %h3
@@ -17,7 +19,8 @@
           %span Play Next Round!
 
   .block.blockspacer
-    %h2.genderheader Share Shag Marry Kill
+    %h2.genderheader
+      = "Share"
     %ul.share
       %li
         %a{href: "http://facebook.com/socialcrunch", target: "_blank"}
@@ -39,10 +42,10 @@
   %h1 I need more...
   %form
     %textarea#message{cols: "30",row: "10"}
-      Hey shagger-marrier-killers,
+      Hey hey,
 
-      Got suggestions for us? Drop us a note. We'll let you know when there are more celebs to hit up on Shag
-      Marry Kill!
+      Got suggestions for us? Drop us a note. We'll let you know when there are more celebs to hit up on
+      = site_name
 
       Besos,
       SMK
