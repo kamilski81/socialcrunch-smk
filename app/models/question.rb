@@ -15,7 +15,7 @@ class Question
   #field :facebook, type: String
 
   index gender: 1, sequence_num: 1
-  index :"stat.shag_count" => -1
+  index :"stat.bang_count" => -1
   index :"stat.marry_count" => -1
   index :"stat.kill_count" => -1
 
@@ -42,6 +42,10 @@ class Question
     exclude_qids  = get_users_responses(session_id)
     questions     = get_next_questions(exclude_qids, gender_pref)
     questions
+  end
+
+  def self.leaders(gender, order)
+    Question.where(gender: gender).ordered_by(order).limit(5)
   end
 
   def self.get_users_responses(session_id)

@@ -10,7 +10,7 @@
           - if question.image
             %img{src: "#{question.image}"}
           %span
-            = "#{question.name} / #{question.description}"
+            = "#{question.name}"
         .shagmarrykill
           - Constants::SMK_OPTIONS.each do |gender_pref|
             %input{type: "radio", name: question.id, value: gender_pref}
