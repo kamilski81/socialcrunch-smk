@@ -1,6 +1,10 @@
 !!!
 %html
   %head
+    / Analytical head_prepend
+    = raw analytical.head_prepend_javascript
+    / Analytical head_prepend end
+
     %title
       = site_name
       \- Powered by SocialCrunch
@@ -10,9 +14,21 @@
 
     = csrf_meta_tags
 
+    / Analytical head_append
+    = raw analytical.head_append_javascript
+    / Analytical head_append end
+
   %body
+    / Analytical body_prepend
+    = raw analytical.body_prepend_javascript
+    / Analytical body_prepend end
     #main
       #wrapper
         = yield
 
     = render partial: "layouts/footer"
+
+    / Analytical body_append
+    = raw analytical.body_append_javascript
+    / Analytical body_append end
+

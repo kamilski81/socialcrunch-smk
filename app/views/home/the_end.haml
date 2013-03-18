@@ -10,12 +10,12 @@
       - @questions.each do |question|
         - if question.image
           %div
-            %a{href: "/leader_board"}
+            %a{href: "/leader_board", onclick: "Analytical.event('viewed leader board');"}
               %img{src: question.image}
 
     #nextround.blockspacer
       %h3
-        %a{href: "/"}
+        %a{href: "/", onclick: "Analytical.event('played next round');"}
           %span Play Next Round!
 
   .block.blockspacer
@@ -23,18 +23,18 @@
       = "Share"
     %ul.share
       %li
-        %a{href: "http://facebook.com/socialcrunch", target: "_blank"}
+        %a{href: "http://facebook.com/socialcrunch", target: "_blank", onclick: "Analytical.event('shared on facebook');"}
           %img{src: "/assets/facebook.png"}
       %li
-        %a{href: "http://twitter.com/socialcrunch", target: "_blank"}
+        %a{href: "http://twitter.com/socialcrunch", target: "_blank", onclick: "Analytical.event('shared on twitter');"}
           %img{src: "/assets/twitter.png"}
       %li
-        %a{href: "https://plus.google.com/117772758368423278117", target: "_blank"}
+        %a{href: "https://plus.google.com/117772758368423278117", target: "_blank", onclick: "Analytical.event('shared on Google+');"}
           %img{src: "/assets/googleplus.png"}
   .block
     %h2.genderheader Play SocialCrunch
     .play
-      %a{href: "http://socialcrunch.com", target: "_blank"}
+      %a{href: "http://socialcrunch.com", target: "_blank", onclick: "Analytical.event('clicked play SocialCrunch');"}
         %img{src: "/assets/logo.jpg"}
 
 

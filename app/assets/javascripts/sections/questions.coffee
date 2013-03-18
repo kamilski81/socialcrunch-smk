@@ -43,6 +43,7 @@ class Questions extends $SC
         $("input:radio").not(":disabled").attr("checked", true).attr "disabled", true
   
     $('#questions').delegate '#next_button', 'click', (e)->
+      Analytical.event('clicked next questions')
       e.preventDefault()
       e.stopPropagation()
       $.get("/questions/get_more_questions", (response) ->
@@ -50,6 +51,7 @@ class Questions extends $SC
       )
 
     $('#questions').delegate '#vote_button', 'click', (e)->
+      Analytical.event('clicked vote')
       e.preventDefault()
       e.stopPropagation()
 
@@ -73,7 +75,7 @@ class Questions extends $SC
 
           setTimeout (=>
             $('#next_button').fadeIn();
-          ), 1500
+          ), 1000
       )
 
 # Assign this class to the $SC.Application Namespace
