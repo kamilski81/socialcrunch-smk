@@ -1,8 +1,13 @@
 -#Set title
 #header
-  %h1
+  %h1.title
     = site_name
-    %br
+  #poweredby
+    %p
+      powered by
+      %a{href: "http://socialcrunch.com"}
+        %img{style: "margin-bottom: -11px", src:"/assets/logowhitetext.png", alt: "SocialCrunch"}
+  %h1
     Leader Board
 
 #content
@@ -15,7 +20,7 @@
           - if question.image
             %img{src: "#{question.image}"}
           %span
-            = "#{question.name} / #{question.description}"
+            = "#{question.name} / #{question.description}: "
             = question.stat.shag_count
   #mostmarried.statlist  
     %h2 Most Married
@@ -26,7 +31,7 @@
             - if question.image
               %img{src: "#{question.image}"}
             %span
-              = "#{question.name} / #{question.description}"
+              = "#{question.name} / #{question.description}: "
               = question.stat.marry_count
   #mostkilled.statlist
     %h2
@@ -38,5 +43,5 @@
             - if question.image
               %img{src: "#{question.image}"}
             %span
-              = "#{question.name} / #{question.description}"
+              = "#{question.name} / #{question.description}: "
               = question.stat.kill_count

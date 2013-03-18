@@ -12,17 +12,17 @@
           %span
             = "#{question.name} / #{question.description}"
         .shagmarrykill
-          - Constants::SMK_OPTIONS.each do |gender_pref|
-            %input{type: "radio", name: question.id, value: gender_pref}
-              = gender_pref.titleize
-              %span{class: "question_results #{question.id} #{gender_pref}"}
-                = question.stat["#{gender_pref}_count".to_sym]
+          %ul
+            - Constants::SMK_OPTIONS.each do |gender_pref|
+              %li              
+                %input{type: "radio", name: question.id, value: gender_pref}
+                  = gender_pref.titleize
+                  %span{class: "question_results #{question.id} #{gender_pref}"}
+                    = question.stat["#{gender_pref}_count ".to_sym]
 
     .spacer
-    #nextround
       %h3
         %span
           %input{type: "submit", name: "vote", value: "Vote", id: "vote_button"}
           %input{type: "submit", name: "next", value: "Next", id: "next_button"}
-
 

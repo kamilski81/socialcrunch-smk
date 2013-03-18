@@ -1,3 +1,24 @@
 #footer
+  .block
+    %h2.genderheader
+      Share
+    %ul.share
+      %li
+        %a{href: "http://facebook.com/socialcrunch", target: "_blank", onclick: "Analytical.event('shared on facebook');"}
+          %img{src: "/assets/facebook.png"}
+      %li
+        %a{href: "http://twitter.com/socialcrunch", target: "_blank", onclick: "Analytical.event('shared on twitter');"}
+          %img{src: "/assets/twitter.png"}
+      %li
+        %a{href: "https://plus.google.com/117772758368423278117", target: "_blank", onclick: "Analytical.event('shared on Google+');"}
+          %img{src: "/assets/googleplus.png"} 
+  .block
+    %h2.genderheader 
+      Play SocialCrunch
+      .play
+        %a{href: "http://socialcrunch.com", target: "_blank", onclick: "Analytical.event('clicked play SocialCrunch');"}
+        %img{src: "/assets/logo.jpg"}
+
 = javascript_tag :defer => 'defer' do
   #{@controller_js_args.present? ? "$SC.initPage('#{controller.class.to_s.split('Controller').first}', #{parse_js_args(@controller_js_args)});" : "$SC.initPage('#{controller.class.to_s.split('Controller').first}');"}
+  
