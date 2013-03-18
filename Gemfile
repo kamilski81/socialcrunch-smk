@@ -7,12 +7,7 @@ gem 'mongoid'
 gem 'haml'
 gem 'rails_admin'
 gem 'devise'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-#gem 'sqlite3'
-
+gem 'analytical', :git => 'git://github.com/kamilski81/analytical.git', :branch => 'v3.0.12-with-tracking'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -54,7 +49,6 @@ group :test do
   gem 'rspec-rails'         # Rspec Testing for rails
   gem 'mongoid-rspec'
 end
-
 
 group :production do
   gem 'unicorn', '~> 4.3.1'

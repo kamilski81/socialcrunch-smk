@@ -13,17 +13,17 @@
   .block
     %h3.genderheader Men
     .gender
-      %a{href: "/prefs?gender_pref=male"}
+      %a{href: "/prefs?gender_pref=male", onclick: "Analytical.event('chose bang males');"}
         %img{src: "/assets/male_small.png"}
 
   .block
     %h3.genderheader Women
     .gender
-      %a{href: "/prefs?gender_pref=female"}
+      %a{href: "/prefs?gender_pref=female", onclick: "Analytical.event('chose bang females');"}
         %img{src: "/assets/female_small.png"}
 
   .block
     %h3.genderheader Both
     .gender
-      %a{href: "/prefs?gender_pref=both"}
+      %a{href: "/prefs?gender_pref=both", onclick: "Analytical.event('chose bang both');"}
         %img{src: "/assets/male_female_small.png"}

@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+
+  analytical :use_session_store=>true
   protect_from_forgery
 
   def session_id

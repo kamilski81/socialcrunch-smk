@@ -1,0 +1,28 @@
+development:
+  console:
+    include: true
+#  optimizely:
+#    key: 134640654
+  google:
+    key: UA-30583434-3
+#    domain: <%= ENV['GA_DOMAIN'] %>
+    domain: none
+    allow_linker: true
+    sample_rate: 100
+  kiss_metrics:
+    js_url_key: http://doug1izaerwt3.cloudfront.net/aa505db0dddba4ab7a2b6ed2661241f69305e827.1.js
+
+test:
+  console:
+    include: true
+
+production:
+  google:
+    key: UA-30583434-1
+    domain: <%= ENV['GA_DOMAIN'] %>
+    allow_linker: true
+    sample_rate: 100
+#  optimizely:
+#    key: 134640654
+  kiss_metrics:
+    js_url_key: http://doug1izaerwt3.cloudfront.net/6ee9d7913afe74a1608273baab3993a25e97697a.1.js

@@ -1,6 +1,3 @@
 #footer
-  -# @nathantodo: move powered by into here
-  This is the footer...
-
 = javascript_tag :defer => 'defer' do
   #{@controller_js_args.present? ? "$SC.initPage('#{controller.class.to_s.split('Controller').first}', #{parse_js_args(@controller_js_args)});" : "$SC.initPage('#{controller.class.to_s.split('Controller').first}');"}

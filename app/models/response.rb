@@ -5,7 +5,7 @@ class Response
   belongs_to :question
 
   field :session_id, type: String
-  field :response, type: String # Shag, marry or kill
+  field :response, type: String # Bang, marry or kill
   field :gender_pref, type: String
 
   index session_id: 1
