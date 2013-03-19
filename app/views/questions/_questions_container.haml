@@ -10,7 +10,7 @@
           - if question.image
             %img{src: "#{question.image}"}
           %span
-            = "#{question.name} / #{question.description}"
+            = question.name
         .bangmarrykill
           %ul
             - Constants::SMK_OPTIONS.each do |gender_pref|
