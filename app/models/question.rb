@@ -57,7 +57,7 @@ class Question
   end
 
   def self.get_next_questions(exclude_qids, gender_pref)
-    criteria = Question.not_in(_id: exclude_qids).order_by(:sequence.asc).limit(Constants::QUESTIONS_LIMIT)
+    criteria = Question.not_in(_id: exclude_qids).order_by(:sequence_num.asc).limit(Constants::QUESTIONS_LIMIT)
 
     if gender_pref == Constants::MALE || gender_pref == Constants::FEMALE
       criteria = criteria.where(gender: gender_pref)
