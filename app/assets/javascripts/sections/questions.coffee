@@ -25,9 +25,9 @@ class Questions extends $SC
       if $("input:radio:checked").length < 3
         alert "Choose one person to Bang, Marry, and Kill."
         return false
-      else if $(".shagmarrykill input:radio[value='kill']:checked").length != 1 ||
-           $(".shagmarrykill input:radio[value='bang']:checked").length != 1 ||
-           $(".shagmarrykill input:radio[value='marry']:checked").length != 1
+      else if $(".bangmarrykill input:radio[value='kill']:checked").length != 1 ||
+           $(".bangmarrykill input:radio[value='bang']:checked").length != 1 ||
+           $(".bangmarrykill input:radio[value='marry']:checked").length != 1
         alert "You can only choose one person to Bang, Marry, or Kill"
         return false
 

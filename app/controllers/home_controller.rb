@@ -3,11 +3,11 @@ class HomeController < ApplicationController
   end
 
   def leader_board
-    @most_shagged_male = Question.leaders("male", "bang_count")
+    @most_banged_male = Question.leaders("male", "bang_count")
     @most_married_male = Question.leaders("male", "marry_count")
     @most_killed_male  = Question.leaders("male", "kill_count")
 
-    @most_shagged_female = Question.leaders("female", "bang_count")
+    @most_banged_female = Question.leaders("female", "bang_count")
     @most_married_female = Question.leaders("female", "marry_count")
     @most_killed_female  = Question.leaders("female", "kill_count")
   end

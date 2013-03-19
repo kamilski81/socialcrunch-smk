@@ -17,9 +17,9 @@
   .block
     %h2.genderheader 
       Play SocialCrunch
-      .play
-        %a{href: "http://socialcrunch.com", target: "_blank", onclick: "Analytical.event('clicked play SocialCrunch');"}
-        %img{src: "/assets/logo.jpg"}
+      %a{href: "http://socialcrunch.com", target: "_blank", onclick: "Analytical.event('clicked socialcrunch from footer');"}
+        .play
+          %img{src: "/assets/logo.jpg"}
 
 = javascript_tag :defer => 'defer' do
   #{@controller_js_args.present? ? "$SC.initPage('#{controller.class.to_s.split('Controller').first}', #{parse_js_args(@controller_js_args)});" : "$SC.initPage('#{controller.class.to_s.split('Controller').first}');"}

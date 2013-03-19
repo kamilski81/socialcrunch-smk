@@ -1,10 +1,10 @@
 #content
   %h1 Female Leader Board
-  #mostshagged.statlist
+  #mostbanged.statlist
     %h2
       = "Most #{Constants::BANG.titleize}ed"
     %ul
-      - @most_shagged_female.each do |question|
+      - @most_banged_female.each do |question|
         %li
           - if question.image
             %img{src: "#{question.image}"}
@@ -34,11 +34,11 @@
               
 #content
   %h1 Male Leader Board
-  #mostshagged.statlist
+  #mostbanged.statlist
     %h2
       = "Most #{Constants::BANG.titleize}ed"
     %ul
-      - @most_shagged_male.each do |question|
+      - @most_banged_male.each do |question|
         %li
           - if question.image
             %img{src: "#{question.image}"}

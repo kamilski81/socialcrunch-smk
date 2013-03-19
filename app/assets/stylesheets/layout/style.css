@@ -23,7 +23,7 @@ body {
 }
 
 div.gradientline{
-	background-image: url('/assets/images/sc-line.png');
+	background-image: url('/assets/sc-line.png');
 	background-color: rgba(75, 75, 75, 0.4);
 	margin: 2px auto;
 	width: 80%;
@@ -143,17 +143,17 @@ h1 {
     background-color: rgba(25, 25, 25,0.7);
 }
 
-.shagmarrykill {
+.bangmarrykill {
 	text-align: left;
 }
-.shagmarrykill ul {
+.bangmarrykill ul {
 	display: list-item;
 	margin-top: -13px;
 	margin-left: -25px;
 	width: 200px
 }
 
-.shagmarrykill ul li{
+.bangmarrykill ul li{
 	font-family: "PillGothic600mg-Light";
     color: #fff;
     background-color: rgba(25, 25, 25,0.7);
@@ -162,7 +162,7 @@ h1 {
     padding: 10px 25px;
 }
 
-.shagmarrykill input {
+.bangmarrykill input {
     margin: 0 11px;
 }
 
