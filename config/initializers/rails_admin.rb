@@ -10,5 +10,12 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Question do
+    list do
+      items_per_page 50
+      fields :name, :gender, :sequence_num, :image
+    end
+  end
+
   config.excluded_models = ['Response', 'User']
 end
