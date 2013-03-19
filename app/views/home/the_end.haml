@@ -1,5 +1,5 @@
 %h1
-  = ["The End", "Finito", "Thanks for Playing"].sample
+  Thanks for playing
 
 #content
   .block
@@ -30,6 +30,5 @@
           #mce-error-response.response{:style => "display:none"}
           #mce-success-response.response{:style => "display:none"}
         .clear
-          -#<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
           %input#email.email{type: "email", name: "EMAIL", value: "enter your email address"}/
           %input.submit{name: "subscribe", type: "submit", value: "submit", onclick: "Analytical.event('clicked subscribe');"}/
