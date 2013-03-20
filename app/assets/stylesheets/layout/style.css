@@ -2,7 +2,7 @@ body{
     font-family: PillGothic600mg-Regular, Helvetica, san serif;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     font-family: PillGothic600mg-Bold, Helvetica, san serif;
     color: #fff;
     -webkit-text-shadow: 3px 3px 4px #000;

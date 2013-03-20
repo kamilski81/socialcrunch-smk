@@ -18,6 +18,7 @@ class QuestionsController < ApplicationController
         Rails.logger.info "Responded to question_id: '#{question_id}', with response: '#{response}'"
       end
     end
+    session[:response_counter] += 1
     render :text => "success"
   end
 
