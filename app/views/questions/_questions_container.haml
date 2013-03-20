@@ -21,6 +21,7 @@
                 %li            
                   %input{type: "radio", name: question.id, value: gender_pref}
                     = gender_pref.titleize
+                    %br
                     %span{class: "question_results #{question.id} #{gender_pref}"}
                       = question.stat["#{gender_pref}_count".to_sym]
 

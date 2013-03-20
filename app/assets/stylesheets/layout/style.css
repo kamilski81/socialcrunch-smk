@@ -159,7 +159,13 @@ h1 {
     background-color: rgba(25, 25, 25,0.7);
     border-radius: 5px;
     margin: 5px auto 0 50px;
-    padding: 10px 25px;
+    padding: 33px 47px;
+    font-size: 1.3em;
+	height: 40px;
+}
+
+.bangmarrykill ul li span {
+	margin-top: 20px;
 }
 
 .bangmarrykill input {
@@ -185,11 +191,14 @@ h1 {
 	text-align: center;
     color: #fff;
 	border: 3px solid black;
+	padding: 20px;
+	font-size: 2em;
 }
 
 #next_button:hover, #vote_button:hover {
 	cursor: pointer;
     border: 3px solid gray;
+
 }
 
 span input {
