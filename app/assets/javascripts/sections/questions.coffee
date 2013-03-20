@@ -18,10 +18,11 @@ class Questions extends $SC
         $('#questions').html(response)
       )
 
-    # add active class to clicked buttons	
-    $(".shagmarrykill input:radio").click ->
-     $(this).closest('li').addClass('active')
-     $(".shagmarrykill input:radio").not(":checked").closest('li').removeClass('active')
+    # add active class to clicked buttons
+
+    $('#questions').delegate 'li', 'click', (e)->
+      $(this).closest('li').addClass('active')
+      $(".shagmarrykill input:radio").not(":checked").closest('li').removeClass('active')
 
     $('#questions').delegate '#vote_button', 'click', (e)->
       e.preventDefault()
