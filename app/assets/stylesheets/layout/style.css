@@ -23,7 +23,7 @@ body {
 }
 
 div.gradientline{
-	background-image: url('/assets/sc-line.png');
+	background-image: url('/assets/images/sc-line.png');
 	background-color: rgba(75, 75, 75, 0.4);
 	margin: 2px auto;
 	width: 80%;
@@ -128,7 +128,7 @@ h1 {
     margin-bottom: -20px;
 }
 
-/********SMK Game*******************/
+/********BMK Game*******************/
 .questionimage {
     background-color: #000;
     position: relative;
@@ -143,29 +143,17 @@ h1 {
     background-color: rgba(25, 25, 25,0.7);
 }
 
-.questionimage span {
-    font-family: PillGothic600mg-Light;
-    position: absolute;
-    color: #fff;
-    bottom: 5px;
-    left: 0px;
-    width: 225px;
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
-    padding: 5px;
-}
-
-.bangmarrykill {
+.shagmarrykill {
 	text-align: left;
 }
-.bangmarrykill ul {
+.shagmarrykill ul {
 	display: list-item;
 	margin-top: -13px;
 	margin-left: -25px;
 	width: 200px
 }
 
-.bangmarrykill ul li{
+.shagmarrykill ul li{
 	font-family: "PillGothic600mg-Light";
     color: #fff;
     background-color: rgba(25, 25, 25,0.7);
@@ -174,8 +162,17 @@ h1 {
     padding: 10px 25px;
 }
 
-.bangmarrykill input {
+.shagmarrykill input {
     margin: 0 11px;
+    display: none;
+}
+
+.shagmarrykill li:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.shagmarrykill .active {
+	background-color: rgb(70, 70, 70);
 }
 
 #next_button, #vote_button {

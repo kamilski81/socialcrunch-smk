@@ -10,15 +10,16 @@
           - if question.image
             %img{src: "#{question.image}"}
           %span
-            = question.name
-        .bangmarrykill
+            = "#{question.name} / #{question.description}"
+        .shagmarrykill
           %ul
             - Constants::SMK_OPTIONS.each do |gender_pref|
-              %li              
-                %input{type: "radio", name: question.id, value: gender_pref}
-                  = gender_pref.titleize
-                  %span{class: "question_results #{question.id} #{gender_pref}"}
-                    = question.stat["#{gender_pref}_count".to_sym]
+              %label  
+                %li            
+                  %input{type: "radio", name: question.id, value: gender_pref}
+                    = gender_pref.titleize
+                    %span{class: "question_results #{question.id} #{gender_pref}"}
+                      = question.stat["#{gender_pref}_count".to_sym]
 
     .spacer
     %span
