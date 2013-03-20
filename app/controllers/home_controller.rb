@@ -17,7 +17,9 @@ class HomeController < ApplicationController
   end
 
   def update_gender_pref
-    session[:gender_pref] = params[:gender_pref].downcase if params[:gender_pref]
+    session[:gender_pref]       = params[:gender_pref].downcase if params[:gender_pref]
+    session[:total_questions]   = Question.get_questions(session_id, gender_pref).count / Constants::QUESTIONS_LIMIT
+    session[:response_counter]  = 1
     redirect_to questions_path
   end
 

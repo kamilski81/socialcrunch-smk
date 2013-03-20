@@ -6,13 +6,13 @@
       Share
     %ul.share
       %li
-        %a{href: "http://facebook.com/socialcrunch", target: "_blank", onclick: "Analytical.event('shared on facebook');"}
+        %a{href: "http://facebook.com/share.php?u=#{site_url}&text=#{site_share}", target: "_blank", onclick: "Analytical.event('shared on facebook');"}
           %img{src: "/assets/facebook.png"}
       %li
-        %a{href: "http://twitter.com/socialcrunch", target: "_blank", onclick: "Analytical.event('shared on twitter');"}
+        %a{href: "http://twitter.com/share?url=#{site_url}&text=#{site_share}", target: "_blank", onclick: "Analytical.event('shared on twitter');"}
           %img{src: "/assets/twitter.png"}
       %li
-        %a{href: "https://plus.google.com/117772758368423278117", target: "_blank", onclick: "Analytical.event('shared on Google+');"}
+        %a{href: "https://m.google.com/app/plus/x/?v=compose&content=#{site_share} - #{site_url}", target: "_blank", onclick: "Analytical.event('shared on Google+');"}
           %img{src: "/assets/googleplus.png"} 
   .block
     %h2.genderheader 
